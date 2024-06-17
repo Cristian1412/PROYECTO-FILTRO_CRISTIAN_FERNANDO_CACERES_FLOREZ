@@ -262,9 +262,9 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     border-radius: 10px;
-    width: 100%; /* Ocupar todo el ancho disponible */
-    max-width: 300px; /* Máximo ancho para evitar que se vea demasiado extendido en pantallas muy grandes */
-    margin-bottom: 20px; /* Espacio entre elementos */
+    width: 100%; 
+    max-width: 300px; 
+    margin-bottom: 20px; 
 }
 
 .funko-item img {
@@ -361,37 +361,37 @@ footer {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
-    overflow: hidden; /* Oculta el overflow de la sección principal */
-    margin: 0; /* Asegura que no haya margen en .inicio */
-    padding: 0; /* Asegura que no haya padding en .inicio */
+    overflow: hidden; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .carrusel {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* Mejora el scroll en dispositivos iOS */
-    width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
-    margin: 0; /* Elimina margen del carrusel */
-    padding: 0; /* Elimina padding del carrusel */
-    height: 100%; /* Asegura que el carrusel ocupe todo el alto disponible */
+    -webkit-overflow-scrolling: touch; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
 }
 
 .elemento {
-    flex: 0 0 100%; /* Asegura que cada elemento ocupe el 100% del contenedor del carrusel */
+    flex: 0 0 100%; 
     scroll-snap-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Asegura que el elemento ocupe todo el alto disponible */
-    margin: 0; /* Elimina margen del elemento */
-    padding: 0; /* Elimina padding del elemento */
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .elemento img {
     width: 100%;
-    height: 100%; /* Ajusta la altura de la imagen para que ocupe todo el alto del elemento */
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
-    margin: 0; /* Elimina margen de la imagen */
-    padding: 0; /* Elimina padding de la imagen */
+    height: 100%; 
+    object-fit: cover; 
+    margin: 0; 
+    padding: 0; 
 }

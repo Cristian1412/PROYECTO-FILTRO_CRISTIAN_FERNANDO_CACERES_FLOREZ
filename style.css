@@ -7,8 +7,33 @@
 
 body{
     font-family: Arial;
-    margin: 0; /* Elimina márgenes del body */
-    padding: 0; /* Elimina padding del body */
+    margin: 0; 
+    padding: 0; 
+}
+
+
+
+.mensaje {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.9); /* Fondo oscuro semitransparente */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 150px;
+} 
+
+
+
+@media (min-width: 769px) {
+
+.mensaje {
+      display: block; 
+    }
 }
 
 
@@ -350,6 +375,26 @@ footer {
     }
 
 
+    .back-to-home {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .back-to-home button {
+        background-color: #f61414; /* Verde */
+        color: white;
+        padding: 10px 80px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .back-to-home button:hover {
+        background-color: #ef5555;
+    }
+
+
 
 
 /* En esta parte va a estar el carrusel*/
@@ -395,3 +440,8 @@ footer {
     margin: 0; 
     padding: 0; 
 }
+.advertencia {
+    max-width: 100%; 
+    max-height: 70%; 
+    display: block; 
+    margin: 0 auto; }

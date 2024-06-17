@@ -7,6 +7,8 @@
 
 body{
     font-family: Arial;
+    margin: 0; /* Elimina márgenes del body */
+    padding: 0; /* Elimina padding del body */
 }
 
 
@@ -244,4 +246,152 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Estilos para la lista de productos */
+.funko-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.funko-item {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 10px;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    max-width: 300px; /* Máximo ancho para evitar que se vea demasiado extendido en pantallas muy grandes */
+    margin-bottom: 20px; /* Espacio entre elementos */
+}
+
+.funko-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.funko-item p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+/* Estilos para la descripción de producto */
+
+
+
+
+.product-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #e74c3c;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.buy-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #c23d2b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #cc2e2e;
+}
+    .product-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .product-details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+
+
+/* En esta parte va a estar el carrusel*/
+
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Oculta el overflow de la sección principal */
+    margin: 0; /* Asegura que no haya margen en .inicio */
+    padding: 0; /* Asegura que no haya padding en .inicio */
+}
+
+.carrusel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Mejora el scroll en dispositivos iOS */
+    width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
+    margin: 0; /* Elimina margen del carrusel */
+    padding: 0; /* Elimina padding del carrusel */
+    height: 100%; /* Asegura que el carrusel ocupe todo el alto disponible */
+}
+
+.elemento {
+    flex: 0 0 100%; /* Asegura que cada elemento ocupe el 100% del contenedor del carrusel */
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el elemento ocupe todo el alto disponible */
+    margin: 0; /* Elimina margen del elemento */
+    padding: 0; /* Elimina padding del elemento */
+}
+
+.elemento img {
+    width: 100%;
+    height: 100%; /* Ajusta la altura de la imagen para que ocupe todo el alto del elemento */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    margin: 0; /* Elimina margen de la imagen */
+    padding: 0; /* Elimina padding de la imagen */
 }

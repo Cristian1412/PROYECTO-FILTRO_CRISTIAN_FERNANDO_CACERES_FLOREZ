@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+
     <header>
         
         <nav class="nav">
@@ -16,27 +19,41 @@
                 <h1 class="nav__title">FunkoVerse</h1>
     
                 <a href="#menu" class="nav__menu">
-                    <img src="./assets/menu.svg" class="nav__icon">
+                    <img src="./iconos/rayasmenu.png" class="nav__icon">
                 </a>
     
                 <a href="#" class="nav__menu nav__menu--second">
-                    <img src="./assets/close.svg" class="nav__icon ">
+                    <img src="./iconos/rayasmenu.png" class="nav__icon ">
                 </a>
     
                 <ul class="dropdown" id="menu">
     
                     <li class="dropdown__list">
                         <a href="#" class="dropdown__link">
-                            <img src="./assets/house.svg" class="dropdown__icon">
+                            <img src="./iconos/hogar.png" class="dropdown__icon">
                             <span class="dropdown__span">Inicio</span>
+                            <img src="./iconos/hogar.png" class="dropdown__arrow">
+    
+                            <input type="checkbox" class="dropdown__check">
                         </a>
+                        <div class="dropdown__content">
+    
+                            <ul class="dropdown__sub">
+    
+                                <li class="dropdown__li">
+                                    <a href="#about" class="dropdown__anchor">Nosotros</a>
+                                </li>
+    
+                            </ul>
+    
+                        </div>
                     </li>
     
                     <li class="dropdown__list">
                         <a href="#productos" class="dropdown__link">
-                            <img src="./assets/projects.svg" class="dropdown__icon">
+                            <img src="./iconos/product.png" class="dropdown__icon">
                             <span class="dropdown__span">Productos</span>
-                            <img src="./assets/down.svg" class="dropdown__arrow">
+                            <img src="./iconos/product.png" class="dropdown__arrow">
     
                             <input type="checkbox" class="dropdown__check">
                         </a>
@@ -66,11 +83,15 @@
                         </div>
                     </li>
     
+
+
+
+
                     <li class="dropdown__list">
                         <a href="#contacto" class="dropdown__link">
-                            <img src="./assets/email.svg" class="dropdown__icon">
+                            <img src="./iconos/contact.png" class="dropdown__icon">
                             <span class="dropdown__span">Contacto</span>
-                            <img src="./assets/down.svg" class="dropdown__arrow">
+                            <img src="./iconos/contact.png" class="dropdown__arrow">
     
                             <input type="checkbox" class="dropdown__check">
                         </a>
@@ -80,7 +101,7 @@
                             <ul class="dropdown__sub">
     
                                 <li class="dropdown__li">
-                                    <a href="#contacto" class="dropdown__anchor">Contact 1</a>
+                                    <a href="#contacto" class="dropdown__anchor">Nuestro contacto</a>
                                 </li>
     
                             </ul>
@@ -90,7 +111,7 @@
     
                     <li class="dropdown__list">
                         <a href="#" class="dropdown__link">
-                            <img src="./assets/help.svg" class="dropdown__icon">
+                            <img src="/iconos/carrito.png" class="dropdown__icon">
                             <span class="dropdown__span">Ventas</span>
                         </a>
                     </li>
@@ -102,6 +123,29 @@
         </nav>
     </header>
     <main>
+    <section class="inicio">
+        <div class="carrusel">
+            <div class="elemento">
+                <img src="/carrusel/carrusel1.jpeg" alt="">
+            </div>
+            <div class="elemento">
+                <img src="/carrusel/carrusel2.jpeg" alt="">
+            </div>
+            <div class="elemento1">
+                <img src="/carrusel/carrusel3.jpeg" alt="">
+            </div>
+            <div class="elemento2">
+                <img src="/carrusel/carrusel4.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
         <section id="productos">
             <h2>Nuevos Lanzamientos</h2>
 

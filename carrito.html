@@ -3,51 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Ventas</title>
+    <title>Carrito de Compras</title>
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
 <body>
-    <nav>
-        <div class="mensaje">
-            <p>Esta página está optimizada para pantallas de hasta 12 pulgadas. Por favor, intente acceder desde un dispositivo con una resolución más baja o desde un celular.</p>
-            <img src="./gif/deadpool.gif" alt="" class="advertencia_imagen">
-        </div>
-    </nav>
 
-    <nav>
-        <div class="back-to-home">
-            <button onclick="window.location.href='index.html';">
-                <img src="/iconos/hogar.png" alt="">
-            </button>
-        </div>
+    <nav class="back-to-home">
+        <button onclick="window.location.href='index.html';">
+            <img src="/iconos/hogar.png" alt="Volver a Inicio">
+        </button>
     </nav>
+    <header>
+        <h1 class="nav_title">Carrito de Compras</h1>
+    </header>
+
     <main>
-    <div class="cart">
-        <h1>Carrito de Compras</h1>
-        <div class="cart-item">
-            <img src="/productos/imagen1.webp" alt="Producto 1">
-            <div class="item-details">
-                <h2>¡Funko Pop! Batman Jokers Wild 292 Exclusivo</h2>
-                <p>Precio $ 85.000</p>
-                <p>Cantidad: <input type="number" value="1" min="1"></p>
-            </div>
-            <button class="remove-btn">Eliminar</button>
-        </div>
-        <div class="cart-item">
-            <img src="/productos/imagen2.webp" alt="Producto 2">
-            <div class="item-details">
-                <h2>Godzilla x Kong: El Nuevo Imperio – 1545 – Funko Pop!</h2>
-                <p>Precio: $ 175.000</p>
-                <p>Cantidad: <input type="number" value="1" min="1"></p>
-            </div>
-            <button class="remove-btn">Eliminar</button>
-        </div>
-        <div class="total">
-            <h2>Total: $30.00</h2>
-            <button class="checkout-btn">Proceder al Pago</button>
-        </div>
-    </div>
-</main>
+        <section id="cart-items"></section>
+        <section id="cart-total">
+            <p>Total: $<span id="total-amount">0</span></p>
+            <button class="buy-button", id="checkout">Proceder al Pago</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FunkoVerse. Todos los derechos reservados.</p>
+    </footer>
 </body>
+<script src="script.js"></script>
 </html>

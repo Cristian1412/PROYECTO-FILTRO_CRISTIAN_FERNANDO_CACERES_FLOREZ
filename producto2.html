@@ -7,40 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="mensaje">
-            <p>Esta página está optimizada para pantallas de hasta 12 pulgadas. Por favor, intente acceder desde un dispositivo con una resolución más baja o desde un celular.</p>
-            <img src="./gif/deadpool.gif" alt="" class="advertencia_imagen">
-        </div>
+    <nav class="back-to-home">
+        <button onclick="window.location.href='index.html';">
+            <img src="/iconos/hogar.png" alt="Volver a Inicio">
+        </button>
     </nav>
-        <nav>
-            <div class="back-to-home">
-                <button onclick="window.location.href='index.html';">
-                    <img src="/iconos/hogar.png" alt="">
-                </button>
-            </div>
-        </nav>
-        <main>
-            <div class="product-container">
-                <div class="product-image">
-                    <img src="/productos/imagen 2.webp" alt="Funko Pop 2">
-                </div>
-                <div class="product-details">
-                    <h1 class="product-title">Godzilla x Kong: El Nuevo Imperio – 1545 – Funko Pop!</h1>
-                    <p class="product-price">$ 175.000</p>
-                    <p class="product-description">
-                        Funko POP Movies nos da a conocer a Kong 6″ – 1545 de la película Godzilla x Kong: The New Empire. 
-                    </p>
-                    <button class="buy-button">Comprar Ahora</button>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <p>&copy; 2024 FunkoVerse. Todos los derechos reservados.</p>
-        </footer>
-    
-    </html>
-    
-    
+
+    <main>
+        <section class="product-container">
+            <figure class="product-image">
+                <img src="/productos/imagen 2.webp" alt="Funko Pop 2">
+            </figure>
+            <section class="product-details">
+                <h1 class="product-title">Godzilla x Kong: El Nuevo Imperio – 1545 – Funko Pop!</h1>
+                <p class="product-price">$ 175.000</p>
+                <p class="product-description">
+                    Funko POP Movies nos da a conocer a Kong 6″ – 1545 de la película Godzilla x Kong: The New Empire.
+                </p>
+            </section>
+            <button class="buy-button" id="addToCart2" data-id="2" data-name="Godzilla x Kong: El Nuevo Imperio – 1545 – Funko Pop!" data-price="175.000" data-image="/productos/imagen2.webp">Añadir al carrito</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FunkoVerse. Todos los derechos reservados.</p>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>

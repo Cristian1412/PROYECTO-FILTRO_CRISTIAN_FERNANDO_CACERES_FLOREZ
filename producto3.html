@@ -7,40 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="mensaje">
-            <p>Esta página está optimizada para pantallas de hasta 12 pulgadas. Por favor, intente acceder desde un dispositivo con una resolución más baja o desde un celular.</p>
-            <img src="./gif/deadpool.gif" alt="" class="advertencia_imagen">
-        </div>
-    </nav>
-        <nav>
-            <div class="back-to-home">
+        <nav class="back-to-home">
                 <button onclick="window.location.href='index.html';">
                     <img src="/iconos/hogar.png" alt="">
                 </button>
-            </div>
         </nav>
         <main>
-            <div class="product-container">
-                <div class="product-image">
+            <section class="product-container">
+                <figure class="product-image">
                     <img src="/productos/imagen3.webp" alt="Funko Pop 3">
-                </div>
-                <div class="product-details">
+                </figure>
+                <section class="product-details">
                     <h1 class="product-title">Spider-Man – Chase – Avances exclusivos – 932 – Funko Pop!</h1>
                     <p class="product-price">$165,000</p>
                     <p class="product-description">
                         Funko POP Marvel del personaje Spider-Man Japonesa Tv Series  Chase – 932 en una edición Previews Exclusive – Glow in the Dark.
                     </p>
-                    <button class="buy-button">Comprar Ahora</button>
-                </div>
-            </div>
+                    
+                </section>
+                <button class="buy-button" id="addToCart3" data-id="3" data-name="Spider-Man – Chase – Avances exclusivos – 932 – Funko Pop!!" data-price="165,000" data-image="/productos/imagen3.webp">Añadir al carrito</button>
+            </section>
         </main>
+        
         <footer>
             <p>&copy; 2024 FunkoVerse. Todos los derechos reservados.</p>
         </footer>
     
-    </html>
     
-    
+<script src="script.js"></script>
 </body>
 </html>

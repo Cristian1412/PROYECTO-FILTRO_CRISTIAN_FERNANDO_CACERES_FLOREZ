@@ -7,37 +7,35 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
+
 <body>
-    <nav>
-        <div class="mensaje">
-            <p>Esta página está optimizada para pantallas de hasta 12 pulgadas. Por favor, intente acceder desde un dispositivo con una resolución más baja o desde un celular.</p>
-            <img src="./gif/deadpool.gif" alt="" class="advertencia_imagen">
-        </div>
+    
+    <nav class="back-to-home">
+        <button onclick="window.location.href='index.html';">
+            <img src="/iconos/hogar.png" alt="Volver a Inicio">
+        </button>
     </nav>
-    <nav>
-        <div class="back-to-home">
-            <button onclick="window.location.href='index.html';">
-                <img src="/iconos/hogar.png" alt="">
-            </button>
-        </div>
-    </nav>
+
     <main>
-        <div class="product-container">
-            <div class="product-image">
+        <section class="product-container">
+            <figure class="product-image">
                 <img src="/productos/imagen1.webp" alt="Funko Pop 1">
-            </div>
-            <div class="product-details">
+            </figure>
+            <section class="product-details">
                 <h1 class="product-title">¡Funko Pop! Batman Jokers Wild 292 Exclusivo</h1>
                 <p class="product-price">$ 85.000</p>
                 <p class="product-description">
                     Funko POP Dc Comics nos presenta a Batman Joker Wild en una edición Exclusiva de su Aniversario # 80.
                 </p>
-                <button class="buy-button">Comprar Ahora</button>
-            </div>
-        </div>
+            </section>
+            <button class="buy-button" id="addToCart" data-id="1" data-name="¡Funko Pop! Batman Jokers Wild 292 Exclusivo!" data-price="85.000" data-image="/productos/imagen1.webp">Añadir al carrito</button>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2024 FunkoVerse. Todos los derechos reservados.</p>
     </footer>
+<script src="script.js"></script>
+
 </body>
 </html>

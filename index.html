@@ -5,196 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkoVerse</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <nav>
-    <div class="mensaje">
-        <p>Esta página está optimizada para pantallas de hasta 12 pulgadas. Por favor, intente acceder desde un dispositivo con una resolución más baja o desde un celular.</p>
-        <img src="./gif/deadpool.gif" alt="" class="advertencia_imagen">
-    </div>
-</nav>
-
-
     <header>
-        
+        <h1 class="nav__title">FunkoVerse</h1>
         <nav class="nav">
-
-            <div class="nav__container">
-    
-                <h1 class="nav__title">FunkoVerse</h1>
-    
-                <a href="#menu" class="nav__menu">
-                    <img src="./iconos/rayasmenu.png" class="nav__icon">
-                </a>
-    
-                <a href="#" class="nav__menu nav__menu--second">
-                    <img src="./iconos/rayasmenu.png" class="nav__icon ">
-                </a>
-    
-                <ul class="dropdown" id="menu">
-    
-                    <li class="dropdown__list">
-                        <a href="#" class="dropdown__link">
-                            <img src="./iconos/hogar.png" class="dropdown__icon">
-                            <span class="dropdown__span">Inicio</span>
-                            <img src="./iconos/hogar.png" class="dropdown__arrow">
-    
-                            <input type="checkbox" class="dropdown__check">
-                        </a>
-                        <div class="dropdown__content">
-    
-                            <ul class="dropdown__sub">
-    
-                                <li class="dropdown__li">
-                                    <a href="#about" class="dropdown__anchor">Nosotros</a>
-                                </li>
-    
-                            </ul>
-    
-                        </div>
-                    </li>
-    
-                    <li class="dropdown__list">
-                        <a href="#productos" class="dropdown__link">
-                            <img src="./iconos/product.png" class="dropdown__icon">
-                            <span class="dropdown__span">Productos</span>
-                            <img src="./iconos/product.png" class="dropdown__arrow">
-    
-                            <input type="checkbox" class="dropdown__check">
-                        </a>
-    
-                        <div class="dropdown__content">
-    
-                            <ul class="dropdown__sub">
-    
-                                <li class="dropdown__li">
-                                    <a href="/producto1.html" class="dropdown__anchor">Producto 1</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a href="/producto2.html" class="dropdown__anchor">Producto 2</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a href="/producto3.html" class="dropdown__anchor">Producto 3</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a href="/producto4.html" class="dropdown__anchor">Producto 4</a>
-                                </li>
-                                <li class="dropdown__li">
-                                    <a href="/producto5.html" class="dropdown__anchor">Producto 5</a>
-                                </li>
-    
-                            </ul>
-    
-                        </div>
-                    </li>
-    
-
-
-
-
-                    <li class="dropdown__list">
-                        <a href="#contacto" class="dropdown__link">
-                            <img src="./iconos/contact.png" class="dropdown__icon">
-                            <span class="dropdown__span">Contacto</span>
-                            <img src="./iconos/contact.png" class="dropdown__arrow">
-    
-                            <input type="checkbox" class="dropdown__check">
-                        </a>
-    
-                        <div class="dropdown__content">
-    
-                            <ul class="dropdown__sub">
-    
-                                <li class="dropdown__li">
-                                    <a href="#contacto" class="dropdown__anchor">Nuestro contacto</a>
-                                </li>
-    
-                            </ul>
-    
-                        </div>
-                    </li>
-    
-                    <li class="dropdown__list">
-                        <a href="./carrito.html" class="dropdown__link">
-                            <img src="/iconos/carrito.png" class="dropdown__icon">
-                            <span class="dropdown__span">Ventas</span>
-                        </a>
-                    </li>
-    
-                </ul>
-    
-            </div>
-    
+            <a href="#menu" class="nav__menu">
+                <img src="./iconos/rayasmenu.png" alt="Menú" class="nav__icon">
+            </a>
+            <ul class="dropdown" id="menu">
+                <li class="dropdown__list">
+                    <a href="#about" class="dropdown__link">
+                        <img src="./iconos/hogar.png" class="dropdown__icon">
+                        <span class="dropdown__span">Inicio</span>
+                    </a>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#productos" class="dropdown__link">
+                        <img src="./iconos/product.png" class="dropdown__icon">
+                        <span class="dropdown__span">Productos</span>
+                    </a>
+                </li>
+                <li class="dropdown__list">
+                    <a href="#contacto" class="dropdown__link">
+                        <img src="./iconos/contact.png" class="dropdown__icon">
+                        <span class="dropdown__span">Contacto</span>
+                    </a>
+                </li>
+                <li class="dropdown__list">
+                    <a href="./carrito.html" class="dropdown__link">
+                        <img src="./iconos/carrito.png" class="dropdown__icon">
+                        <span class="dropdown__span">Ventas</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
+
     <main>
-    <section class="inicio">
-        <div class="carrusel">
-            <div class="elemento">
+        <section class="inicio">
+            <figure class="elemento">
                 <img src="/carrusel/carrusel1.jpeg" alt="">
-            </div>
-            <div class="elemento">
+            </figure>
+            <figure class="elemento">
                 <img src="/carrusel/carrusel2.jpeg" alt="">
-            </div>
-            <div class="elemento1">
+            </figure>
+            <figure class="elemento1">
                 <img src="/carrusel/carrusel3.jpeg" alt="">
-            </div>
-            <div class="elemento2">
+            </figure>
+            <figure class="elemento2">
                 <img src="/carrusel/carrusel4.jpeg" alt="">
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
+            </figure>
+        </section>
 
         <section id="productos">
             <h2>Nuevos Lanzamientos</h2>
-
             
-            <div class="funko-grid">
-                <div class="funko-item">
-                    <a href="/producto1.html"><img src="/productos/imagen1.webp" alt="Funko Pop 1">
-                        <p>Batman Jokers Wild 292 Exclusivo</p>
+            <!-- Campo de búsqueda -->
+            <input type="text" id="searchInput" placeholder="Buscar productos..." onkeyup="filterProducts()">
+            
+            <section class="funko-grid" id="productGrid">
+                <figure class="funko-item">
+                    <a href="/producto1.html">
+                        <img src="/productos/imagen1.webp" alt="Batman Jokers Wild">
+                        <figcaption>Batman Jokers Wild 292 Exclusivo</figcaption>
                     </a>
-
-                </div>
-                <div class="funko-item">
-                    <a href="/producto2.html"><img src="/productos/imagen2.webp" alt="Funko Pop 2">
-                        <p>Godzilla x Kong: El Nuevo Imperio</p>
+                </figure>
+                <figure class="funko-item">
+                    <a href="/producto2.html">
+                        <img src="/productos/imagen2.webp" alt="Godzilla x Kong">
+                        <figcaption>Godzilla x Kong: El Nuevo Imperio</figcaption>
                     </a>
-                    
-                </div>
-                <div class="funko-item">
-                    <a href="/producto3.html"><img src="/productos/imagen3.webp" alt="Funko Pop 1">
-                        <p>Spider-Man – Chase – Avances exclusivos</p>
+                </figure>
+                <figure class="funko-item">
+                    <a href="/producto3.html">
+                        <img src="/productos/imagen3.webp" alt="Spider-Man">
+                        <figcaption>Spider-Man – Chase – Avances exclusivos</figcaption>
                     </a>
-                    
-                </div>
-                <div class="funko-item">
-                    <a href="/producto4.html"><img src="/productos/imagen4.jpg" alt="Funko Pop 2">
-                        <p>Deadpool Playtime</p>
+                </figure>
+                <figure class="funko-item">
+                    <a href="/producto4.html">
+                        <img src="/productos/imagen4.jpg" alt="Deadpool Playtime">
+                        <figcaption>Deadpool Playtime</figcaption>
                     </a>
-                </div>
-                <div class="funko-item">
-                    <a href="/producto5.html"><img src="/productos/imagen5.webp" alt="Funko Pop 1">
-                        <p>Kronk como diablo</p>
+                </figure>
+                <figure class="funko-item">
+                    <a href="/producto5.html">
+                        <img src="/productos/imagen5.webp" alt="Kronk">
+                        <figcaption>Kronk como diablo</figcaption>
                     </a>
-                    
-                </div>
-                <!-- Añade más Funko Pops aquí -->
-            </div>
+                </figure>
+            </section>
         </section>
+
         <section id="about">
             <h2>Nosotros</h2>
             <p>Somos una tienda dedicada a ofrecer los mejores Funko Pops del mercado. Nuestra pasión por la cultura pop nos impulsa a traer las figuras más recientes y exclusivas.</p>
         </section>
+
         <section id="contacto">
             <h2>Contacto</h2>
-            <form action="submit_form.php" method="post">
+            <form id="contactForm">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Correo Electrónico:</label>
@@ -204,9 +116,12 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
+        
     </main>
+
     <footer>
         <p>&copy; 2024 FunkoVerse. Todos los derechos reservados.</p>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>
